@@ -4,5 +4,5 @@
 
 extern void init_random();
 extern unsigned short random_ushort();
-extern unsigned int random_uint();
+extern unsigned long random_uint();
 extern float random_float();

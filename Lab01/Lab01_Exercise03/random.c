@@ -11,10 +11,14 @@ unsigned short random_ushort() {
 	return rand();
 }
 
-unsigned int random_uint(x) {
-	return((RANDOM_A*x) + RANDOM_C);
+unsigned int random_uint(int n) {
+	unsigned int rand_val = rseed;
+	for (int j = 0; j < n + 1; j++) {
+		rand_val = (RANDOM_A*rand_val) + RANDOM_C;
+	}
+	return(rand_val);
 }
 
-float random_float(x) {
-	return((float) random_uint(x));
+float random_float(int n) {
+	return((float) random_uint(n));
 }

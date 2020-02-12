@@ -13,10 +13,11 @@ int main()
 	unsigned int i = 0;
 	init_random();
 	// Add random values to array
-	float x = (float) RAND_SEED;
+	float x = RAND_SEED;
 	for (i; i < NUM_VALUES; i++)
 	{
-		value[i] = random_float(x);
+		printf("x = %f", x);
+		value[i] = random_float(i);
 		printf("i = %d, value stored = %0.f\n", i, value[i]);
 		sum += value[i];
 		x = value[i];

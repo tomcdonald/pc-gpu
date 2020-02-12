@@ -1,1 +1,6 @@
-﻿  Lab01_Exercise03.vcxproj -> U:\gpu-comp\Lab01\Debug\Lab01_Exercise03.exe
+﻿  random.c
+u:\gpu-comp\lab01\lab01_exercise03\random.c(6): warning C4013: 'srand' undefined; assuming extern returning int
+u:\gpu-comp\lab01\lab01_exercise03\random.c(11): warning C4013: 'rand' undefined; assuming extern returning int
+u:\gpu-comp\lab01\lab01_exercise03\random.c(14): warning C4142: 'random_uint': benign redefinition of type
+  u:\gpu-comp\lab01\lab01_exercise03\random.h(7): note: see declaration of 'random_uint'
+  Lab01_Exercise03.vcxproj -> U:\gpu-comp\Lab01\Debug\Lab01_Exercise03.exe
