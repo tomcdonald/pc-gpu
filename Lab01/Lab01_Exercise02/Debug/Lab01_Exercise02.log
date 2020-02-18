@@ -1,1 +1,9 @@
-﻿  Lab01_Exercise02.vcxproj -> U:\gpu-comp\Lab01\Debug\Lab01_Exercise02.exe
+﻿  exercise2.c
+u:\pc-gpu\lab01\lab01_exercise02\exercise2.c(35): warning C4244: '=': conversion from '__int64' to 'long', possible loss of data
+u:\pc-gpu\lab01\lab01_exercise02\exercise2.c(29): warning C4244: 'initializing': conversion from '__int64' to 'long', possible loss of data
+  random.c
+u:\pc-gpu\lab01\lab01_exercise02\random.c(6): warning C4013: 'srand' undefined; assuming extern returning int
+u:\pc-gpu\lab01\lab01_exercise02\random.c(11): warning C4013: 'rand' undefined; assuming extern returning int
+u:\pc-gpu\lab01\lab01_exercise02\random.c(19): warning C4244: 'return': conversion from 'unsigned int' to 'float', possible loss of data
+  Generating Code...
+  Lab01_Exercise02.vcxproj -> U:\pc-gpu\Lab01\Debug\Lab01_Exercise02.exe

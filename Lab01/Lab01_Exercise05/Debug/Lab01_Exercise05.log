@@ -1,0 +1,7 @@
+﻿  exercise5.c
+u:\pc-gpu\lab01\lab01_exercise05\exercise5.c(29): warning C4133: 'function': incompatible types - from 'FILE *' to 'char *'
+u:\pc-gpu\lab01\lab01_exercise05\exercise5.c(29): warning C4020: 'readLine': too many actual parameters
+u:\pc-gpu\lab01\lab01_exercise05\exercise5.c(32): warning C4013: 'isalpha' undefined; assuming extern returning int
+u:\pc-gpu\lab01\lab01_exercise05\exercise5.c(64): warning C4028: formal parameter 1 different from declaration
+u:\pc-gpu\lab01\lab01_exercise05\exercise5.c(64): warning C4029: declared formal parameter list different from definition
+  Lab01_Exercise05.vcxproj -> U:\pc-gpu\Lab01\Debug\Lab01_Exercise05.exe

@@ -1,0 +1,5 @@
+﻿  exercise4.c
+u:\pc-gpu\lab01\lab01_exercise04\exercise4.c(6): warning C4005: '_CRT_SECURE_NO_DEPRECATE': macro redefinition
+  u:\pc-gpu\lab01\lab01_exercise04\exercise4.c(6): note: command-line arguments:  see previous definition of '_CRT_SECURE_NO_DEPRECATE'
+u:\pc-gpu\lab01\lab01_exercise04\exercise4.c(25): warning C4013: 'isalpha' undefined; assuming extern returning int
+  Lab01_Exercise04.vcxproj -> U:\pc-gpu\Lab01\Debug\Lab01_Exercise04.exe
