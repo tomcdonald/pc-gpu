@@ -1,0 +1,9 @@
+﻿  exercise02.c
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(37): error C2297: '*': illegal, right operand has type 'unsigned int *'
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(37): warning C4047: 'function': '::size_t' differs in levels of indirection from 'FILE *'
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(37): warning C4024: 'fread': different types for formal and actual parameter 3
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(37): error C2198: 'fread': too few arguments for call
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(39): error C2297: '*': illegal, right operand has type 'unsigned int *'
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(39): warning C4047: 'function': '::size_t' differs in levels of indirection from 'FILE *'
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(39): warning C4024: 'fread': different types for formal and actual parameter 3
+u:\pc-gpu\lab02\lab02_exercise02\exercise02.c(39): error C2198: 'fread': too few arguments for call
