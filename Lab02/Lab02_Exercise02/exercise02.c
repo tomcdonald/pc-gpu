@@ -8,7 +8,7 @@
 
 struct student{
 	unsigned int n;
-	char *forename;//[128]
+	char *forename;
 	unsigned int m;
 	char *surname;
 	float average_module_mark;
@@ -18,6 +18,7 @@ void print_student(const struct student *s);
 
 void main(){
 	struct student *students = (struct student *) malloc(sizeof(struct student) * NUM_STUDENTS);
+	//struct student *students;
 	int i;
 
 	FILE *f = NULL;
@@ -27,25 +28,24 @@ void main(){
 		exit(1);
 	}
 
-	//fread(students, sizeof(struct student), NUM_STUDENTS, f);
-	//fclose(f);
-
 	for (i = 0; i < NUM_STUDENTS; i++){
-		unsigned int *n;////////////////////////
-		unsigned int *m;
-		fread(n, sizeof(&n), 1, f);
-		fread(students, sizeof(char) * n, 1, f);
-		fread(m, sizeof(&n), 1, f);
-		fread(students, sizeof(char) * m, 1, f);
-		fread(students, sizeof(float), 1, f);//////////////////
-
+		// Reading forename
+		unsigned int n;
+		fread(&n, sizeof(unsigned int), 1, f);
+		students[i].forename = malloc(sizeof(char) * n);
+		fread(students[i].forename, sizeof(char) * n, 1, f);
+		// Reading surname
+		unsigned int m;
+		fread(&m, sizeof(unsigned int), 1, f);
+		students[i].surname = malloc(sizeof(char) * m);
+		fread(students[i].surname, sizeof(char) * m, 1, f);
+		// Reading module mark
+		fread(&students[i].average_module_mark, sizeof(float), 1, f);
 
 		print_student(&students[i]);
-
 	}
 
-	fclose(f);///////
-
+	fclose(f);
 	free(students);
 }
 
