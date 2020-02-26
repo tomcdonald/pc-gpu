@@ -1,0 +1,7 @@
+2.1) Serial code runtime - 0.66821 seconds for 1000 iterations
+	 MP code runtime - 0.12854 seconds for 1000 iterations
+	 
+2.2) Serial code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0.123084 seconds for 100 iterations
+	 OMP `critical` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0.457123 seconds for 100 iterations
+	 OMP `master` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0. seconds for 100 iterations
+	 OMP `atomic` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0. seconds for 100 iterations

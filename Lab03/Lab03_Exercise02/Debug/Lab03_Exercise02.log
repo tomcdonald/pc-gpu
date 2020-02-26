@@ -1,0 +1,4 @@
+﻿  exercise02.c
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(63): error C2057: expected constant expression
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(63): error C2466: cannot allocate an array of constant size 0
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(63): error C2133: 'local_histogram': unknown size

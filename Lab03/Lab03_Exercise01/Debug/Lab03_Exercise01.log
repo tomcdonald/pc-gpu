@@ -1,0 +1,5 @@
+﻿  exercise01.c
+u:\pc-gpu\lab03\lab03_exercise01\exercise01.c(117): warning C4101: 'k': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise01\exercise01.c(117): warning C4101: 'j': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise01\exercise01.c(118): warning C4101: 'temp': unreferenced local variable
+  Lab03_Exercise01.vcxproj -> U:\pc-gpu\Lab03\Debug\Lab03_Exercise01.exe
