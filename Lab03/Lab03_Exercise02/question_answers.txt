@@ -3,5 +3,13 @@
 	 
 2.2) Serial code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0.123084 seconds for 100 iterations
 	 OMP `critical` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0.457123 seconds for 100 iterations
-	 OMP `master` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0. seconds for 100 iterations
-	 OMP `atomic` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0. seconds for 100 iterations
+	 OMP `master` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - 0.100948 seconds for 100 iterations
+	 OMP `atomic` code runtime w/ HISTOGRAM_ESCAPE_VELOCITY TF - ## seconds for 100 iterations
+	 
+2.3) (All w/ `master`)
+	 Default schedule: 0.3749s for 1000 iterations
+	 Dynamic(1) schedule: 0.3633s for 1000 iterations
+	 Dynamic(2) schedule: 0.3639s for 1000 iterations
+	 Dynamic(4) schedule: 0.3811s for 1000 iterations
+	 Dynamic(8) schedule: 0.3455s for 1000 iterations
+	 Guided schedule:  0.3500s for 1000 iterations

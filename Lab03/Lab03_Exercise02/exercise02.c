@@ -14,7 +14,7 @@
 #define WIDTH 1024
 #define HEIGHT 768
 
-#define MAX_ITERATIONS 100				//number of iterations
+#define MAX_ITERATIONS 1000			//number of iterations
 
 //C parameters (modify these to change the zoom and position of the mandelbrot)
 #define ZOOM 1.0
@@ -58,9 +58,8 @@ int main(int argc, char *argv[])
 	//STAGE 1) calculate the escape time for each pixel
 	#pragma omp parallel num_threads(omp_get_max_threads())
 	{
-	int t;
 	int max_threads = omp_get_max_threads();
-	int local_histogram[max_threads][HEIGHT];
+	static int local_histogram[HEIGHT][MAX_ITERATIONS + 1];
 
 	#pragma omp for private(n_r, n_i, o_r, o_i, c_r, c_i, mu, x)
 	for (y = 0; y < HEIGHT; y++)
@@ -98,24 +97,25 @@ int main(int argc, char *argv[])
 		iterations[y][x] = i;	//record the escape velocity
 
 		if ((tf == HISTOGRAM_ESCAPE_VELOCITY) || (tf == HISTOGRAM_NORMALISED_ITERATION_COUNT)) {
-			//#pragma omp critical (hist)
+			//#pragma omp critical (hist) // Ex. 2.2.1
+			//#pragma omp atomic Ex 2.2.3 (unfinished)
 			//histogram[i]++;
-			local_histogram[omp_get_thread_num()][i]++;
+			local_histogram[omp_get_thread_num()][i]++; // Ex 2.2.2
 		}
 
 	}
-	#pragma omp barrier
+	#pragma omp barrier // Ex 2.2.2
 	#pragma omp master
-	for (t = 0; t < max_threads; t++) {
-		for (y = 0; y < HEIGHT; y++) {
-			histogram[y] += local_histogram[t][y];
+	for (y= 0; y < HEIGHT; y++) {
+		for (i = 0; i < MAX_ITERATIONS; i++) {
+			histogram[i] += local_histogram[y][i];
 		}
 	}
 	}
 
 
 	//STAGE 2) calculate the transfer (rgb output) for each pixel
-	#pragma omp parallel for private(x)
+#pragma omp parallel for private(x) schedule(guided)
 	for (y = 0; y < HEIGHT; y++)
 	for (x = 0; x < WIDTH; x++)
 	{

@@ -1,12 +1,12 @@
 ﻿  exercise02.c
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(35): warning C4101: 'c_i': unreferenced local variable
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(37): warning C4101: 'mu': unreferenced local variable
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(36): warning C4101: 'n_r': unreferenced local variable
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(36): warning C4101: 'n_i': unreferenced local variable
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(34): warning C4101: 'x': unreferenced local variable
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(36): warning C4101: 'o_i': unreferenced local variable
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(36): warning C4101: 'o_r': unreferenced local variable
-u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(35): warning C4101: 'c_r': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(34): warning C4101: 'c_i': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(36): warning C4101: 'mu': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(35): warning C4101: 'n_r': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(35): warning C4101: 'n_i': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(33): warning C4101: 'x': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(35): warning C4101: 'o_i': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(35): warning C4101: 'o_r': unreferenced local variable
+u:\pc-gpu\lab03\lab03_exercise02\exercise02.c(34): warning C4101: 'c_r': unreferenced local variable
   Generating code
   3 of 11 functions (27.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
